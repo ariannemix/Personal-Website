@@ -1,0 +1,30 @@
+:root {
+    --main-light-color: #ffca68;
+    --main-font: 'Playfair Display', serif;
+    --secondary-font: 'Kaisei HarunoUmi', serif;
+}
+
+.text-color {
+    color: #30242E;
+    font-family: var(--secondary-font);
+}
+
+.active {
+    font-weight: bold !important;
+}
+
+.hero {
+    background-color: #DC493B;
+    height: 63vh;
+}
+
+.main-intro {
+    text-align: center;
+    padding-top: 22vh;
+    color: var(--main-light-color);
+    font-family: var(--main-font);
+}
+
+.main-intro h1 {
+    font-size: 60px;
+}
