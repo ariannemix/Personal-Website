@@ -28,3 +28,7 @@
 .main-intro h1 {
     font-size: 60px;
 }
+
+.certificates {
+    background-color: var(--main-light-color);
+}
