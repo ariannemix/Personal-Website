@@ -1,34 +1,105 @@
 :root {
-    --main-light-color: #ffca68;
-    --main-font: 'Playfair Display', serif;
-    --secondary-font: 'Kaisei HarunoUmi', serif;
+  --main-light-color: #fdd14f;
+  --main-dark-color: #30242e;
+  --main-accent-color: #ee6d9a;
+  --secondary-accent-color: #9771f4;
+  --main-font: "Playfair Display", serif;
+  --secondary-font: "Kaisei HarunoUmi", serif;
+}
+
+.secondary-heading {
+  font-family: var(--main-font);
+  font-size: 45px;
+  letter-spacing: 1px;
+  color: var(--main-light-color);
 }
 
 .text-color {
-    color: #30242E;
-    font-family: var(--secondary-font);
+  color: var(--main-dark-color);
+  font-family: var(--secondary-font);
 }
 
 .active {
-    font-weight: bold !important;
+  font-weight: bold !important;
+}
+
+.center {
+  text-align: center;
 }
 
 .hero {
-    background-color: #DC493B;
-    height: 63vh;
+  background-color: var(--main-accent-color);
+  height: 63vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-about {
+  background-color: var(--main-accent-color);
 }
 
 .main-intro {
-    text-align: center;
-    padding-top: 22vh;
-    color: var(--main-light-color);
-    font-family: var(--main-font);
+  color: var(--main-light-color);
+  font-family: var(--main-font);
+  text-align: center;
+  max-height: 30vh;
 }
 
 .main-intro h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
-.certificates {
-    background-color: var(--main-light-color);
+.certifcates {
+  transition: ease-in-out 400ms;
+}
+
+.certificates:hover {
+  border: solid 3px var(--main-light-color);
+  cursor: pointer;
+}
+
+.personal-photo {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.about-link {
+  text-decoration: none;
+  color: var(--main-light-color);
+  transition: ease-in-out 200ms;
+}
+
+.about-link:hover {
+  font-weight: bolder;
+  color: var(--main-dark-color);
+}
+
+/* .contact {
+  color: var(--main-dark-color);
+  font-family: var(--main-font);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact-hero {
+  background-color: var(--secondary-accent-color);
+} */
+
+@media (max-width: 414px) {
+  .secondary-heading,
+  .text-color {
+    text-align: center;
+  }
+
+  .secondary-heading {
+    padding-top: 10px;
+  }
 }
