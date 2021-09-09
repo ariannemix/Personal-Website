@@ -115,8 +115,14 @@
   border: solid 2px var(--main-light-color);
 }
 
-.center p {
+.contact {
   font-size: 24px;
+  text-align: center;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 50px;
 }
 
 @media (min-width: 1200px) {
@@ -156,5 +162,23 @@
 
   .p-5 {
     padding: 10px !important;
+  }
+
+  .contact {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .contact-heading {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .main-intro h1 {
+    font-size: 37px;
+  }
+
+  .main-intro h2 {
+    font-size: 18px;
   }
 }
